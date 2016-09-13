@@ -1,7 +1,3 @@
-numbers1 = [3,2,3,3,6,7]
-numbers2 = [3,1,2,4,3]
-numbers3 = [3,3,3,3]
-
 def haveThree(array)
   threes = 0
   array.each do |number|
@@ -53,4 +49,20 @@ def no14(array)
     no = false
   end
   return no
+end
+
+def more14(array)
+  fours = 0
+  ones = 0
+  array.each do |number|
+    if number == 1
+      ones = ones + 1
+    elsif number == 4
+      fours = fours + 1
+    end
+  end
+  if ones > fours
+    return true
+  end
+  return false
 end
