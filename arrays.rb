@@ -22,7 +22,15 @@ def countEvens(array)
       evens = evens + 1
     end
   end
-  puts evens
+  return evens
 end
 
-countEvens(numbers1)
+def lucky13(array)
+  lucky = true
+  array.each do |number|
+    if number == 1 || number == 3
+      lucky = false
+    end
+  end
+  return lucky
+end
