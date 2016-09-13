@@ -10,13 +10,19 @@ def haveThree(array)
     end
   end
   if threes == 3
-    puts "There are 3 threes."
     return true
   end
-  puts "There are not 3 threes."
   return false
 end
 
-haveThree(numbers1)
-haveThree(numbers2)
-haveThree(numbers3)
+def countEvens(array)
+  evens = 0
+  array.each do |number|
+    if number % 2 == 0
+      evens = evens + 1
+    end
+  end
+  puts evens
+end
+
+countEvens(numbers1)
