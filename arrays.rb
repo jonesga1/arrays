@@ -34,3 +34,23 @@ def lucky13(array)
   end
   return lucky
 end
+
+def no14(array)
+  no = true
+  has4 = false
+  has1 = false
+  array.each do |number|
+    if number == 1
+      has1 = true
+    end
+  end
+  array.each do |number|
+    if number == 4
+      has4 = true
+    end
+  end
+  if has1 == true && has4 == true
+    no = false
+  end
+  return no
+end
